@@ -1,2 +1,4 @@
-hello world ... its a docker file
-asbslba ajsb f; ;aj
+FROM openjdk:17 
+MAINTAINER docker.net
+COPY target/employee-springboot-demo-1.0.jar docker-spring-application.jar
+ENTRYPOINT ["java", "-jar", "/docker-spring-application.jar"]
